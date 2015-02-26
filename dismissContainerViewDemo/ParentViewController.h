@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ParentViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIView *containerView;
+
+
+- (IBAction)showContainerAction:(id)sender;
 
 @end
 

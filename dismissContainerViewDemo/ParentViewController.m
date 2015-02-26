@@ -6,22 +6,26 @@
 //  Copyright (c) 2015年 yu. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ParentViewController.h"
 
-@interface ViewController ()
+@interface ParentViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ParentViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    _containerView.hidden = YES;
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)showContainerAction:(id)sender {
+    _containerView.hidden = NO;
+}
 @end
